@@ -44,6 +44,10 @@ Run the test client:
 
     sudo docker run -v `pwd`/keys:/keys --network=host --entrypoint /opt/ffsrv.fireflytech.org/bin/test_client ffsrv:latest
 
+# Integrating the client library into your app
+
+TODO
+
 # Debugging issues
 
 Shell into the container:
