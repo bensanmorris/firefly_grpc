@@ -34,6 +34,8 @@ Verify the db (via mysql client):
 
     > Test123!
 
+# Running
+
 Run server container (with syslog logging, by default write to localhost:514):
 
     sudo docker rm ffsrv && sudo docker run --log-driver=syslog --network=host -v `pwd`/keys:/keys --env-file=./devel_env-file --name ffsrv ffsrv:latest
@@ -41,6 +43,8 @@ Run server container (with syslog logging, by default write to localhost:514):
 Run the test client:
 
     sudo docker run -v `pwd`/keys:/keys --network=host --entrypoint /opt/ffsrv.fireflytech.org/bin/test_client ffsrv:latest
+
+# Debugging issues
 
 Shell into the container:
 
@@ -79,7 +83,6 @@ Shell into a container layer:
                 "createdAt": 1578903150.0
             }
         }
-
 
     steps:
         create an aws user with appropriate IAM privs
