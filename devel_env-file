@@ -1,0 +1,5 @@
+db_hostname_env=127.0.0.1
+ca_env=/keys/MyCA.pem
+cert_env=/keys/ben-LabTop-server-crt.pem
+key_env=/keys/ben-LabTop-server-key.pem
+db_username_env=ff_user
