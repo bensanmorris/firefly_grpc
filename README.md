@@ -24,6 +24,8 @@ Build db image:
     cd db
     sudo docker build -t ffsrv_db:latest .
 
+# Running
+
 Run db container:
 
     sudo docker rm ffsrv_db && sudo docker run --network=host --name ffsrv_db ffsrv_db:latest
@@ -33,8 +35,6 @@ Verify the db (via mysql client):
     mysql -h 127.0.0.1 -u ff_user -p
 
     > Test123!
-
-# Running
 
 Run server container (with syslog logging, by default write to localhost:514):
 
