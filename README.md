@@ -50,7 +50,7 @@ Shell into a container layer:
 
     sudo docker run --rm -it [layer_id]
 
-AWS:
+# AWS deployment
 
     https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR_AWSCLI.html
     
@@ -85,7 +85,6 @@ AWS:
         create an aws user with appropriate IAM privs
         aws configure using aws user / access key
         create docker repo
-        ???
         tag docker image:
             sudo docker tag a3232ae459c5 062866975314.dkr.ecr.us-west-2.amazonaws.com/ffsrv:latest
         push docker image:
