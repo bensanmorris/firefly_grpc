@@ -1,6 +1,6 @@
 # About
 
-A small (grpc-based) server for transmitting / recording (in a mariadb database) the 3D location of a game tester in a game to aid in analysing test coverage of 3D game environments.
+A small (grpc-based) client-server for transmitting / recording (in a mariadb database) the 3D location of a game tester in a game to aid in analysing test coverage of 3D game environments.
 
 # Licensing
 
