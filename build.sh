@@ -13,8 +13,9 @@ if [ $? -ne 1 ]; then
 fi
 
 # pull down submodules (grpc, certstrap etc)
-rm -rf grpc
-git clone -b $(curl -L https://grpc.io/release) https://github.com/grpc/grpc
+if [ ! -d grpc ] ; then
+    git clone -b v1.26.0 https://github.com/grpc/grpc
+fi
 
 # build grpc
 pushd .
