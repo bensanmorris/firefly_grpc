@@ -5,9 +5,7 @@
 #include <vector>
 
 #include <grpcpp/grpcpp.h>
-
 #include "myservice.grpc.pb.h"
-
 #include "logger_syslog.h"
 
 using grpc::Channel;

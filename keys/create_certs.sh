@@ -34,7 +34,7 @@ openssl x509 -outform der -in $scriptDir/ca-crt.pem -out $scriptDir/ca-crt.der
 
 # our server host names
 servers=(
-    'localhost'
+    'ben-LabTop'
 )
 
 # our server service names
@@ -81,7 +81,7 @@ done
 
 # our client host names
 clients=(
-    'localhost'
+    'ben-LabTop'
 )
 
 # our client key domains
